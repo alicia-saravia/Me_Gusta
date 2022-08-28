@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Me_gusta.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    <title>Me Gusta</title>
+</head>
+<body>
+    <div class="conteiner-principal">
+        <div class="barra-navegacion"> <!--abertura del div (sub conteiner1) dentro de el de da las caracteristicas, dando nomnbre a sus clases.-->
+            <span class="material-icons">arrow_back</span>
+            <span class="material-icons">arrow_forward</span>
+            <span class="material-icons">close</span>
+            <span class="material-icons">home</span>                
+            <input type="text" id="fname" name="fname" class="search" placeholder="Search" value="/users/username/Documents/liks-project/index.html"><br><br>
+            <button class="boton" onclick="login()" id="login">Search</button>    
+        </div><!--cierre div-->
+
+        <!--div class="contenido"-->
+        <div class="texto-barras">
+            <div class="red-trabajo">
+                <h2>Network</h2>
+            </div>
+            <div class="feed">
+                <h2>Your Feed</h2>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izquierda">
+                <img src="user-circle.png" alt="" class="usuario"><br>
+                <a href="http://www.avatar.com">Add an avatar</a>
+                <h1>James Doe</h1>
+            </div>
+            <div class="derecha">
+                <div class="algunos-usuarios">
+                    <span class="titulo">Neil M</span>
+                    <span id="like_neil">9</span> like(s)
+                    <button class="boton" onclick="like_neil()" id="like">Like</button>    
+                    <p>I jus set up this new discord bot, let me know what you all think <a href="http://www.like.com">link</a></p> 
+                </div>
+                
+                <div class="algunos-usuarios">
+                    <span class="titulo">Nichole K</span>
+                    <span id="like_nichole">12</span> like(s)
+                    <button class="boton" onclick="like_nichole()" id="like">Like</button>    
+                    <p>Just finished my <a href="http://www.next comic.com">next comic</a>, check it out</p> 
+                </div>
+    
+                <div class="algunos-usuarios">
+                    <span class="titulo">Jim R</span>
+                    <span id="like_jim">9</span> like(s)
+                    <button class="boton" onclick="like_jim()" id="like">Like</button>    
+                    <p>I can't stop listenig to the <a href="http://www.new albun">new albun</a>, Who else is liking it?</p> 
+                </div>    
+            </div> 
+
+        </div> 
+        
+
+    </div>
+    <script src="Me_gusta.js"></script>
+</body>
+</html>
